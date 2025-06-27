@@ -1,0 +1,349 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #e3f2fd, #bbdefb);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Encabezado */
+h1 {
+    font-size: 2.8rem;
+    color: #0d47a1;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Subtítulos */
+h2 {
+    font-size: 1.5rem;
+    color: #1565c0;
+    margin: 30px 0 15px;
+    text-align: center;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Enlaces estilizados */
+a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2196f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #1976d2;
+}
+
+/* Contenedor centrado */
+.container {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffffee;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/*
+.menu-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}*/
+
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.menu-bloque {
+    background-color: #f5f5f5;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.menu-principal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-principal li {
+    margin: 10px 0;
+}
+
+.menu-principal a {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.menu-principal a:hover {
+    background-color: #0056b3;
+}
+
+
+/*registrar*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f7fc;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-box label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-box input[type="text"],
+.form-box input[type="number"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #2c7be5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #195ecb;
+}
+
+.volver {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.volver a {
+    color: #cbd7e7;
+    text-decoration: none;
+}
+
+.volver a:hover {
+    text-decoration: underline;
+}
+
+/*pacientes*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #2c7be5;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f9ff;
+}
+
+tr:hover {
+    background-color: #eaf1fb;
+}
+
+a {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #2c7be5;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #195ecb;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+
+/*simulador*/
+.lista-pacientes {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.lista-pacientes li {
+    background-color: #ffffff;
+    border: 2px solid #00bcd4;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-size: 16px;
+    line-height: 1.4;
+    transition: transform 0.2s ease;
+}
+
+.lista-pacientes li:hover {
+    transform: scale(1.02);
+}
+
+.lista-pacientes.atendidos li {
+    background-color: #e6ffed;
+    border: 2px solid #4caf50;
+}
+/*menu principal*/
+/* Contenedor principal del menú */
+.main-container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título principal */
+.main-title {
+    font-size: 2.5rem;
+    color: #0b5394;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de tarjetas de menú */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Tarjetas de menú */
+.menu-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+
+.menu-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #073763;
+}
+
+/* Enlaces */
+.menu-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-card li {
+    margin: 10px 0;
+}
+
+.menu-card a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #0b5394;
+    transition: color 0.3s;
+}
+
+.menu-card a:hover {
+    color: #074a8b;
+    font-weight: bold;
+}

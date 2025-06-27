@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pacientes en Espera</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+</head>
+<body>
+    <h1>🕐 Pacientes en Espera</h1>
+
+    {% if pacientes %}
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Gravedad</th>
+                <th>Síntomas</th>
+                <th>Hospital</th>
+                <th>Hora de Llegada</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in pacientes %}
+            <tr>
+                <td>{{ p.nombre }}</td>
+                <td>{{ p.edad }}</td>
+                <td>{{ p.gravedad }}</td>
+                <td>{{ p.sintomas }}</td>
+                <td>{{ p.hospital_asignado or 'No asignado' }}</td>
+                <td>{{ p.hora_llegada }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <p>No hay pacientes en espera.</p>
+    {% endif %}
+
+    <br>
+    <a href="{{ url_for('index') }}">🔙 Volver al inicio</a>
+</body>
+</html>

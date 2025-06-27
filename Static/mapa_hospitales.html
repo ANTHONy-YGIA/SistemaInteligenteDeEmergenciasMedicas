@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ffe8c7516d1dbadfb2bb8ea5089b9797 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ffe8c7516d1dbadfb2bb8ea5089b9797" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ffe8c7516d1dbadfb2bb8ea5089b9797 = L.map(
+                "map_ffe8c7516d1dbadfb2bb8ea5089b9797",
+                {
+                    center: [-15.5, -70.1],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_74194f7a02f1fbb4fe5f889b3e5ce51c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_74194f7a02f1fbb4fe5f889b3e5ce51c.addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var marker_e1e02f9ad7e63dfb52095fe0910db564 = L.marker(
+                [-15.481724, -70.120715],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_0b39c2dd1ed23556fd0c7e0868c7c680 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52a408399ec7ae20a8f7b1fbea03143c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_076dd6b65d34ba2522d5c873e844b84d = $(`<div id="html_076dd6b65d34ba2522d5c873e844b84d" style="width: 100.0%; height: 100.0%;"><strong>Hospital Carlos Monge Medrano</strong><br>Tipo: Hospital Essalud<br>Nivel: crítico<br>Dirección: Av.Huancane Huancané, Juliaca<br>Tel: 051-321901</div>`)[0];
+                popup_52a408399ec7ae20a8f7b1fbea03143c.setContent(html_076dd6b65d34ba2522d5c873e844b84d);
+            
+        
+
+        marker_e1e02f9ad7e63dfb52095fe0910db564.bindPopup(popup_52a408399ec7ae20a8f7b1fbea03143c)
+        ;
+
+        
+    
+    
+                marker_e1e02f9ad7e63dfb52095fe0910db564.setIcon(icon_0b39c2dd1ed23556fd0c7e0868c7c680);
+            
+    
+            var marker_53849dc71f979863b8eb496bc7eff99e = L.marker(
+                [-15.497987, -70.132249],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_ff7706fbbeaefa9c1101fbebd77c04a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84cfa5ac87aedc4f09e551415c9034db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbb54ad42a19c44461093df3248138dc = $(`<div id="html_dbb54ad42a19c44461093df3248138dc" style="width: 100.0%; height: 100.0%;"><strong>Clínica Americana</strong><br>Tipo: Clínica<br>Nivel: intermedio<br>Dirección: Jr. Loreto 315. Urb. La, Rinconada, Juliaca<br>Tel: 051-324567</div>`)[0];
+                popup_84cfa5ac87aedc4f09e551415c9034db.setContent(html_dbb54ad42a19c44461093df3248138dc);
+            
+        
+
+        marker_53849dc71f979863b8eb496bc7eff99e.bindPopup(popup_84cfa5ac87aedc4f09e551415c9034db)
+        ;
+
+        
+    
+    
+                marker_53849dc71f979863b8eb496bc7eff99e.setIcon(icon_ff7706fbbeaefa9c1101fbebd77c04a7);
+            
+    
+            var marker_b6eae5c1680bdb5f574b6c120008e9eb = L.marker(
+                [-15.498269, -70.13176],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_b7a3dcdb7073fc398551d5e9dc570e15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34258406bfb5ba95c14c91c9048c40e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a0cf2816816fb08912671a483b11ea2 = $(`<div id="html_8a0cf2816816fb08912671a483b11ea2" style="width: 100.0%; height: 100.0%;"><strong>Servicios Médicos Globales S.A.C.</strong><br>Tipo: Clínica<br>Nivel: intermedio<br>Dirección: Jr. 7 de Junio 201 Esquina con Callao, 21104<br>Tel: 051-325301</div>`)[0];
+                popup_34258406bfb5ba95c14c91c9048c40e4.setContent(html_8a0cf2816816fb08912671a483b11ea2);
+            
+        
+
+        marker_b6eae5c1680bdb5f574b6c120008e9eb.bindPopup(popup_34258406bfb5ba95c14c91c9048c40e4)
+        ;
+
+        
+    
+    
+                marker_b6eae5c1680bdb5f574b6c120008e9eb.setIcon(icon_b7a3dcdb7073fc398551d5e9dc570e15);
+            
+    
+            var marker_9c2dab3b9567b0a19852c07afdda0043 = L.marker(
+                [-15.497527, -70.132903],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_aa8580d75c2549da7728576869bdcc68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b261ea48590f584309cd9e704f118bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ae1073372cae55c32fa1966664af31a = $(`<div id="html_0ae1073372cae55c32fa1966664af31a" style="width: 100.0%; height: 100.0%;"><strong>Clínica Monte Sinaí</strong><br>Tipo: Clínica<br>Nivel: intermedio<br>Dirección: Loreto 343, Juliaca 21104<br>Tel: 948976145</div>`)[0];
+                popup_3b261ea48590f584309cd9e704f118bc.setContent(html_0ae1073372cae55c32fa1966664af31a);
+            
+        
+
+        marker_9c2dab3b9567b0a19852c07afdda0043.bindPopup(popup_3b261ea48590f584309cd9e704f118bc)
+        ;
+
+        
+    
+    
+                marker_9c2dab3b9567b0a19852c07afdda0043.setIcon(icon_aa8580d75c2549da7728576869bdcc68);
+            
+    
+            var marker_8a75032af699aaef98673ad7c955c27e = L.marker(
+                [-15.496477, -70.132475],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_d4f2fe197edb0c3c26908feadcb8e5fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cdb0672daa8cbbde31ac5c7de3859bdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3cf145a207a16be027606085737e3474 = $(`<div id="html_3cf145a207a16be027606085737e3474" style="width: 100.0%; height: 100.0%;"><strong>Clínica Maternidad Juliaca</strong><br>Tipo: Clínica<br>Nivel: intermedio<br>Dirección: Av. Juliaca, Puno 21001<br>Tel: 995755076</div>`)[0];
+                popup_cdb0672daa8cbbde31ac5c7de3859bdd.setContent(html_3cf145a207a16be027606085737e3474);
+            
+        
+
+        marker_8a75032af699aaef98673ad7c955c27e.bindPopup(popup_cdb0672daa8cbbde31ac5c7de3859bdd)
+        ;
+
+        
+    
+    
+                marker_8a75032af699aaef98673ad7c955c27e.setIcon(icon_d4f2fe197edb0c3c26908feadcb8e5fe);
+            
+    
+            var marker_a93f3379db045b1348746db0dfed5a2a = L.marker(
+                [-15.497502, -70.133479],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_c936463d7e3307a8cace538847b7ba00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3b91a08e911e414409147f44a95c244 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f861de6b5340913ac49db6760bacf8a = $(`<div id="html_1f861de6b5340913ac49db6760bacf8a" style="width: 100.0%; height: 100.0%;"><strong>Servicios Médicos Vida EIRL</strong><br>Tipo: Clínica<br>Nivel: básico<br>Dirección: Jirón Manuel Prado 528, Juliaca 21104<br>Tel: 969179758</div>`)[0];
+                popup_d3b91a08e911e414409147f44a95c244.setContent(html_1f861de6b5340913ac49db6760bacf8a);
+            
+        
+
+        marker_a93f3379db045b1348746db0dfed5a2a.bindPopup(popup_d3b91a08e911e414409147f44a95c244)
+        ;
+
+        
+    
+    
+                marker_a93f3379db045b1348746db0dfed5a2a.setIcon(icon_c936463d7e3307a8cace538847b7ba00);
+            
+    
+            var marker_e132fab2f423ccb3514e0564cea5b42a = L.marker(
+                [-15.486127, -70.12436],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_ed9a7c4461e34e46b71f673d3dd429f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbd497c127d67346d29624e069694c86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6a672821954bdd5c5d198cda130fe94 = $(`<div id="html_f6a672821954bdd5c5d198cda130fe94" style="width: 100.0%; height: 100.0%;"><strong>Clínica San Carlos</strong><br>Tipo: Clínica<br>Nivel: intermedio<br>Dirección: Av. Circunvalacion Este, Juliaca 21101<br>Tel: 986699233</div>`)[0];
+                popup_fbd497c127d67346d29624e069694c86.setContent(html_f6a672821954bdd5c5d198cda130fe94);
+            
+        
+
+        marker_e132fab2f423ccb3514e0564cea5b42a.bindPopup(popup_fbd497c127d67346d29624e069694c86)
+        ;
+
+        
+    
+    
+                marker_e132fab2f423ccb3514e0564cea5b42a.setIcon(icon_ed9a7c4461e34e46b71f673d3dd429f8);
+            
+    
+            var marker_4a900bc72772f142bc4fa74fbce11a12 = L.marker(
+                [-15.480379, -70.136379],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_cc2c16fc35dd702d5150d1b8f7817c10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9191a8a0017e2e77d2b617185da51352 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed6d8bb78bbbbcfe7d340f5827022589 = $(`<div id="html_ed6d8bb78bbbbcfe7d340f5827022589" style="width: 100.0%; height: 100.0%;"><strong>Essalud - Red Asistencial Juliaca</strong><br>Tipo: Hospital Essalud<br>Nivel: crítico<br>Dirección: 3S 155, Juliaca 21102<br>Tel: 051-328000</div>`)[0];
+                popup_9191a8a0017e2e77d2b617185da51352.setContent(html_ed6d8bb78bbbbcfe7d340f5827022589);
+            
+        
+
+        marker_4a900bc72772f142bc4fa74fbce11a12.bindPopup(popup_9191a8a0017e2e77d2b617185da51352)
+        ;
+
+        
+    
+    
+                marker_4a900bc72772f142bc4fa74fbce11a12.setIcon(icon_cc2c16fc35dd702d5150d1b8f7817c10);
+            
+    
+            var marker_e6cb092c3fc8f2cb7a8f034440910c20 = L.marker(
+                [-15.84204, -70.02178],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_81964628dfbdcc56ecd13185c333de97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e56341e81b2fd857365e86ac91578fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4aab96686b75b9f1a4004e7be68d90d7 = $(`<div id="html_4aab96686b75b9f1a4004e7be68d90d7" style="width: 100.0%; height: 100.0%;"><strong>Hospital Regional Manuel Núñez Butrón</strong><br>Tipo: Hospital MINSA<br>Nivel: crítico<br>Dirección: Av. El Sol 1022, Puno 21002<br>Tel: 051-208425</div>`)[0];
+                popup_0e56341e81b2fd857365e86ac91578fb.setContent(html_4aab96686b75b9f1a4004e7be68d90d7);
+            
+        
+
+        marker_e6cb092c3fc8f2cb7a8f034440910c20.bindPopup(popup_0e56341e81b2fd857365e86ac91578fb)
+        ;
+
+        
+    
+    
+                marker_e6cb092c3fc8f2cb7a8f034440910c20.setIcon(icon_81964628dfbdcc56ecd13185c333de97);
+            
+    
+            var marker_e08ed35338e00bdf9693389abdc637e6 = L.marker(
+                [-15.819131, -70.032445],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_336699a453f5cbfdd06d186a49095f7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a09fc930b59c126fc7027492ef8018c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6bda2a37c94a644558ecae32004dddf = $(`<div id="html_e6bda2a37c94a644558ecae32004dddf" style="width: 100.0%; height: 100.0%;"><strong>Hospital Nacional del Altiplano</strong><br>Tipo: Hospital EsSalud<br>Nivel: crítico<br>Dirección: Jirón Jose Balta 1712, Puno 21001<br>Tel: 051-352525</div>`)[0];
+                popup_3a09fc930b59c126fc7027492ef8018c.setContent(html_e6bda2a37c94a644558ecae32004dddf);
+            
+        
+
+        marker_e08ed35338e00bdf9693389abdc637e6.bindPopup(popup_3a09fc930b59c126fc7027492ef8018c)
+        ;
+
+        
+    
+    
+                marker_e08ed35338e00bdf9693389abdc637e6.setIcon(icon_336699a453f5cbfdd06d186a49095f7a);
+            
+    
+            var marker_fe11a71a195dd6bb907ce4f9617f8a4a = L.marker(
+                [-15.841382, -70.022345],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_2f070483148c61cc7735ff83b0000253 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_905d41dd73fe9953706d9bf606a62f54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2094d500f7f867fe2560cad1771cfb4 = $(`<div id="html_b2094d500f7f867fe2560cad1771cfb4" style="width: 100.0%; height: 100.0%;"><strong>Clínica Puno Salud</strong><br>Tipo: Clínica<br>Nivel: intermedio<br>Dirección: Ramon Castilla 180, Puno 21002<br>Tel: 951667705</div>`)[0];
+                popup_905d41dd73fe9953706d9bf606a62f54.setContent(html_b2094d500f7f867fe2560cad1771cfb4);
+            
+        
+
+        marker_fe11a71a195dd6bb907ce4f9617f8a4a.bindPopup(popup_905d41dd73fe9953706d9bf606a62f54)
+        ;
+
+        
+    
+    
+                marker_fe11a71a195dd6bb907ce4f9617f8a4a.setIcon(icon_2f070483148c61cc7735ff83b0000253);
+            
+    
+            var marker_4b11739cd351e128c3cc9143ca1e9cad = L.marker(
+                [-15.86457, -70.01261],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_04a9267d74d751a85c875484c5080740 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e0b913a03fe5a37c517b3ae007d059d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2883a9bdfae14fd2c101043dcde681e8 = $(`<div id="html_2883a9bdfae14fd2c101043dcde681e8" style="width: 100.0%; height: 100.0%;"><strong>Centro de Salud Simón Bolívar</strong><br>Tipo: Centro de Salud<br>Nivel: básico<br>Dirección: 4XPP+5X6, Puno 21002<br>Tel: 051-358000</div>`)[0];
+                popup_2e0b913a03fe5a37c517b3ae007d059d.setContent(html_2883a9bdfae14fd2c101043dcde681e8);
+            
+        
+
+        marker_4b11739cd351e128c3cc9143ca1e9cad.bindPopup(popup_2e0b913a03fe5a37c517b3ae007d059d)
+        ;
+
+        
+    
+    
+                marker_4b11739cd351e128c3cc9143ca1e9cad.setIcon(icon_04a9267d74d751a85c875484c5080740);
+            
+    
+            var marker_60da5c8d34333d0f82765f27e8ef477b = L.marker(
+                [-15.872559, -70.000048],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_12c373677c597d540569f1f687d0c571 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3894785d3dea8a9458512ca68236ffd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fefea841d87f5cc5cfc3262d3b1931d = $(`<div id="html_6fefea841d87f5cc5cfc3262d3b1931d" style="width: 100.0%; height: 100.0%;"><strong>Hospital III EsSalud Puno</strong><br>Tipo: Centro de Salud<br>Nivel: básico<br>Dirección: 42H2+FP3 HOSPITAL NIVEL III - PUNO -ESSALUD, Av Industrial 26, Puno 21002<br>Tel: 051-599090</div>`)[0];
+                popup_3894785d3dea8a9458512ca68236ffd4.setContent(html_6fefea841d87f5cc5cfc3262d3b1931d);
+            
+        
+
+        marker_60da5c8d34333d0f82765f27e8ef477b.bindPopup(popup_3894785d3dea8a9458512ca68236ffd4)
+        ;
+
+        
+    
+    
+                marker_60da5c8d34333d0f82765f27e8ef477b.setIcon(icon_12c373677c597d540569f1f687d0c571);
+            
+    
+            var marker_24f3832fb6da8d521962de6de31f5193 = L.marker(
+                [-15.827583, -70.034189],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_4e57cc3c0d3a1542ac7dab94b94168e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c0949c92d6b93c567914036e06aadf4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b7d00ed776b763162db2b1db9a001d0 = $(`<div id="html_7b7d00ed776b763162db2b1db9a001d0" style="width: 100.0%; height: 100.0%;"><strong>Policlínico PNP Puno</strong><br>Tipo: Centro de Salud PNP<br>Nivel: intermedio<br>Dirección: 5XC8+X6G, Puno 21001<br>Tel: 051-360000</div>`)[0];
+                popup_7c0949c92d6b93c567914036e06aadf4.setContent(html_7b7d00ed776b763162db2b1db9a001d0);
+            
+        
+
+        marker_24f3832fb6da8d521962de6de31f5193.bindPopup(popup_7c0949c92d6b93c567914036e06aadf4)
+        ;
+
+        
+    
+    
+                marker_24f3832fb6da8d521962de6de31f5193.setIcon(icon_4e57cc3c0d3a1542ac7dab94b94168e3);
+            
+    
+            var marker_4e1021fd26a9512675ee101511fe492d = L.marker(
+                [-15.861525, -70.001299],
+                {
+}
+            ).addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+            var icon_f815c697dca474ae0580bc7cc6b43121 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a39afbef7564d85bfe7c6ffea6b085cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4193a82dcf292f0cea0ba3c822e22674 = $(`<div id="html_4193a82dcf292f0cea0ba3c822e22674" style="width: 100.0%; height: 100.0%;"><strong>Hospital I ESSALUD Clinica Universitaria</strong><br>Tipo: Centro de Salud<br>Nivel: básico<br>Dirección: 4XQX+9F8, Puno 21002<br>Tel: 051-361000</div>`)[0];
+                popup_a39afbef7564d85bfe7c6ffea6b085cf.setContent(html_4193a82dcf292f0cea0ba3c822e22674);
+            
+        
+
+        marker_4e1021fd26a9512675ee101511fe492d.bindPopup(popup_a39afbef7564d85bfe7c6ffea6b085cf)
+        ;
+
+        
+    
+    
+                marker_4e1021fd26a9512675ee101511fe492d.setIcon(icon_f815c697dca474ae0580bc7cc6b43121);
+            
+    
+            tile_layer_74194f7a02f1fbb4fe5f889b3e5ce51c.addTo(map_ffe8c7516d1dbadfb2bb8ea5089b9797);
+        
+    
+                marker_e1e02f9ad7e63dfb52095fe0910db564.setIcon(icon_0b39c2dd1ed23556fd0c7e0868c7c680);
+            
+    
+                marker_53849dc71f979863b8eb496bc7eff99e.setIcon(icon_ff7706fbbeaefa9c1101fbebd77c04a7);
+            
+    
+                marker_b6eae5c1680bdb5f574b6c120008e9eb.setIcon(icon_b7a3dcdb7073fc398551d5e9dc570e15);
+            
+    
+                marker_9c2dab3b9567b0a19852c07afdda0043.setIcon(icon_aa8580d75c2549da7728576869bdcc68);
+            
+    
+                marker_8a75032af699aaef98673ad7c955c27e.setIcon(icon_d4f2fe197edb0c3c26908feadcb8e5fe);
+            
+    
+                marker_a93f3379db045b1348746db0dfed5a2a.setIcon(icon_c936463d7e3307a8cace538847b7ba00);
+            
+    
+                marker_e132fab2f423ccb3514e0564cea5b42a.setIcon(icon_ed9a7c4461e34e46b71f673d3dd429f8);
+            
+    
+                marker_4a900bc72772f142bc4fa74fbce11a12.setIcon(icon_cc2c16fc35dd702d5150d1b8f7817c10);
+            
+    
+                marker_e6cb092c3fc8f2cb7a8f034440910c20.setIcon(icon_81964628dfbdcc56ecd13185c333de97);
+            
+    
+                marker_e08ed35338e00bdf9693389abdc637e6.setIcon(icon_336699a453f5cbfdd06d186a49095f7a);
+            
+    
+                marker_fe11a71a195dd6bb907ce4f9617f8a4a.setIcon(icon_2f070483148c61cc7735ff83b0000253);
+            
+    
+                marker_4b11739cd351e128c3cc9143ca1e9cad.setIcon(icon_04a9267d74d751a85c875484c5080740);
+            
+    
+                marker_60da5c8d34333d0f82765f27e8ef477b.setIcon(icon_12c373677c597d540569f1f687d0c571);
+            
+    
+                marker_24f3832fb6da8d521962de6de31f5193.setIcon(icon_4e57cc3c0d3a1542ac7dab94b94168e3);
+            
+    
+                marker_4e1021fd26a9512675ee101511fe492d.setIcon(icon_f815c697dca474ae0580bc7cc6b43121);
+            
+</script>
+</html>

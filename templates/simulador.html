@@ -1,0 +1,46 @@
+<!-- templates/simulador.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Atención</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>🩺 Simulador de Atención Médica</h1>
+
+        <form action="{{ url_for('atender_simulador') }}" method="post">
+            <button type="submit" class="btn">Atender Siguiente Paciente</button>
+        </form>
+
+        <h2>🕐 Pacientes en Espera</h2>
+        {% if pacientes_espera %}
+            <ul class="lista-pacientes">
+                {% for p in pacientes_espera %}
+                    <li>
+                        <strong>{{ p.nombre }}</strong> | Edad: {{ p.edad }} | Gravedad: {{ p.gravedad }} | Llegada: {{ p.hora_llegada }}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No hay pacientes en espera.</p>
+        {% endif %}
+
+        <h2>✅ Pacientes Atendidos</h2>
+        {% if pacientes_atendidos %}
+            <ul class="lista-pacientes atendidos">
+                {% for p in pacientes_atendidos %}
+                    <li>
+                        <strong>{{ p.nombre }}</strong> | Edad: {{ p.edad }} | Llegada: {{ p.hora_llegada }}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No se han atendido pacientes todavía.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ruta al Hospital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+</head>
+<body>
+    <h1>🧭 Ruta al Hospital Asignado</h1>
+
+    <h3>🏥 Hospital asignado:</h3>
+    <p><strong>{{ hospital.nombre }}</strong></p>
+    <p>📍 Dirección: {{ hospital.direccion }}</p>
+    <p>📞 Teléfono: {{ hospital.telefono }}</p>
+
+    <h3>🗺️ Ver ruta en Google Maps:</h3>
+    <p>
+        <a href="{{ url_maps }}" target="_blank" style="font-size: 18px; color: blue;">
+            🔗 Abrir ruta en Google Maps
+        </a>
+    </p>
+
+    <br>
+    <a href="/" class="btn">🏠 Volver al inicio</a>
+</body>
+</html>

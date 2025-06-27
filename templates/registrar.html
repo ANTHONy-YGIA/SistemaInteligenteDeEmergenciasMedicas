@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Paciente</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+    <script>
+        function obtenerUbicacion() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(pos) {
+                    document.getElementById('lat').value = pos.coords.latitude;
+                    document.getElementById('lon').value = pos.coords.longitude;
+                }, function() {
+                    alert("⚠️ No se pudo obtener tu ubicación. Asegúrate de permitir acceso.");
+                });
+            } else {
+                alert("Tu navegador no soporta geolocalización.");
+            }
+        }
+
+        window.onload = obtenerUbicacion;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Registrar Nuevo Paciente</h2>
+        <form method="post" class="form-box">
+            <label>Nombre: <input type="text" name="nombre" required></label>
+            <label>Edad: <input type="number" name="edad" required></label>
+            <label>Gravedad (1-5): <input type="number" name="gravedad" min="1" max="5" required></label>
+            <label>Síntomas (separados por coma): <input type="text" name="sintomas" required></label>
+            <label>Hospital asignado (opcional): <input type="text" name="hospital"></label>
+
+            <input type="hidden" name="lat" id="lat">
+            <input type="hidden" name="lon" id="lon">
+
+            <button type="submit">Registrar</button>
+        </form>
+        <div class="volver">
+            <a href="/">← Volver al inicio</a>
+        </div>
+    </div>
+</body>
+</html>

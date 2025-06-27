@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="main-title">🏥 Sistema de Triaje Inteligente</h1>
+
+        <div class="menu-grid">
+            <div class="menu-card">
+                <h2>👤 Paciente</h2>
+                <ul>
+                    <li><a href="{{ url_for('registrar') }}">📝 Registrar Nuevo Paciente</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-card">
+                <h2>👨‍⚕️ Doctor</h2>
+                <ul>
+                    <li><a href="{{ url_for('ver_pacientes') }}">📋 Ver Pacientes en Espera</a></li>
+                    <li><a href="{{ url_for('simulador') }}">🩺 Simulador de Atención</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-card">
+                <h2>🗺️ Mapas</h2>
+                <ul>
+                    <li><a href="{{ url_for('mapa') }}">🌍 Ver Mapa de Hospitales</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

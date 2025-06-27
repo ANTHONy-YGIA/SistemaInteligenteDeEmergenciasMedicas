@@ -1,0 +1,137 @@
+[
+  {
+    "nombre": "Hospital Carlos Monge Medrano",
+    "nivel": "crítico",
+    "direccion": "Av.Huancane Huancané, Juliaca",
+    "tipo": "Hospital Essalud",
+    "telefono": "051-321901",
+    "lat": -15.481724,
+    "lon": -70.120715
+  },
+  {
+    "nombre": "Clínica Americana",
+    "nivel": "intermedio",
+    "direccion": "Jr. Loreto 315. Urb. La, Rinconada, Juliaca",
+    "tipo": "Clínica",
+    "telefono": "051-324567",
+    "lat": -15.497987,
+    "lon": -70.132249
+  },
+  {
+    "nombre": "Servicios Médicos Globales S.A.C.",
+    "nivel": "intermedio",
+    "direccion": "Jr. 7 de Junio 201 Esquina con Callao, 21104",
+    "tipo": "Clínica",
+    "telefono": "051-325301",
+    "lat": -15.498269,
+    "lon": -70.131760
+  },
+  {
+    "nombre": "Clínica Monte Sinaí",
+    "nivel": "intermedio",
+    "direccion": "Loreto 343, Juliaca 21104",
+    "tipo": "Clínica",
+    "telefono": "948976145",
+    "lat": -15.497527,
+    "lon": -70.132903
+  },
+  {
+    "nombre": "Clínica Maternidad Juliaca",
+    "nivel": "intermedio",
+    "direccion": "Av. Juliaca, Puno 21001",
+    "tipo": "Clínica",
+    "telefono": "995755076",
+    "lat": -15.496477,
+    "lon": -70.132475
+  },
+  {
+    "nombre": "Servicios Médicos Vida EIRL",
+    "nivel": "básico",
+    "direccion": "Jirón Manuel Prado 528, Juliaca 21104",
+    "tipo": "Clínica",
+    "telefono": "969179758",
+    "lat": -15.497502,
+    "lon": -70.133479
+  },
+  {
+    "nombre": "Clínica San Carlos",
+    "nivel": "intermedio",
+    "direccion": "Av. Circunvalacion Este, Juliaca 21101",
+    "tipo": "Clínica",
+    "telefono": "986699233",
+    "lat": -15.486127,
+    "lon": -70.124360
+  },
+  {
+    "nombre": "Essalud - Red Asistencial Juliaca",
+    "nivel": "crítico",
+    "direccion": "3S 155, Juliaca 21102",
+    "tipo": "Hospital Essalud",
+    "telefono": "051-328000",
+    "lat": -15.480379,
+    "lon": -70.136379
+  },
+  {
+    "nombre": "Hospital Regional Manuel Núñez Butrón",
+    "nivel": "crítico",
+    "direccion": "Av. El Sol 1022, Puno 21002",
+    "tipo": "Hospital MINSA",
+    "telefono": "051-208425",
+    "lat": -15.84204,
+    "lon": -70.02178
+  },
+  {
+    "nombre": "Hospital Nacional del Altiplano",
+    "nivel": "crítico",
+    "direccion": "Jirón Jose Balta 1712, Puno 21001",
+    "tipo": "Hospital EsSalud",
+    "telefono": "051-352525",
+    "lat": -15.819131,
+    "lon": -70.032445
+  },
+  {
+    "nombre": "Clínica Puno Salud",
+    "nivel": "intermedio",
+    "direccion": "Ramon Castilla 180, Puno 21002",
+    "tipo": "Clínica",
+    "telefono": "951667705",
+    "lat": -15.841382,
+    "lon": -70.022345
+  },
+  {
+    "nombre": "Centro de Salud Simón Bolívar",
+    "nivel": "básico",
+    "direccion": "4XPP+5X6, Puno 21002",
+    "tipo": "Centro de Salud",
+    "telefono": "051-358000",
+    "lat": -15.86457,
+    "lon": -70.01261
+  },
+  {
+    "nombre":"Hospital III EsSalud Puno",
+    "nivel": "básico",
+    "direccion": "42H2+FP3 HOSPITAL NIVEL III - PUNO -ESSALUD, Av Industrial 26, Puno 21002",
+    "tipo": "Centro de Salud",
+    "telefono": "051-599090",
+    "lat": -15.872559,
+    "lon": -70.000048
+  },
+  {
+    "nombre": "Policlínico PNP Puno",
+    "nivel": "intermedio",
+    "direccion": "5XC8+X6G, Puno 21001",
+    "tipo": "Centro de Salud PNP",
+    "telefono": "051-360000",
+    "lat": -15.827583,
+    "lon": -70.034189
+  },
+  {
+    "nombre": "Hospital I ESSALUD Clinica Universitaria",
+    "nivel": "básico",
+    "direccion": "4XQX+9F8, Puno 21002",
+    "tipo": "Centro de Salud",
+    "telefono": "051-361000",
+    "lat": -15.861525,
+    "lon": -70.001299
+  }
+]
